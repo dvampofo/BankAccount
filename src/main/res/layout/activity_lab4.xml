@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eecs1022.lab4application.Lab4Activity">
+
+    <TextView
+        android:id="@+id/labelClient1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:text="Name of Client 1:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputClient1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelClient1"
+        android:layout_alignBottom="@+id/labelClient1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/labelClient1"
+        android:layout_toRightOf="@+id/labelClient1"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/labelClient1Balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/labelClient1"
+        android:layout_marginTop="17dp"
+        android:text="Initial balance of Client 1:" />
+
+    <EditText
+        android:id="@+id/inputClient1Balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/inputClient1"
+        android:layout_alignRight="@+id/inputClient1"
+        android:layout_below="@+id/labelClient1"
+        android:layout_toEndOf="@+id/labelClient1Balance"
+        android:layout_toRightOf="@+id/labelClient1Balance"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/labelClient2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/inputClient1Balance"
+        android:layout_marginTop="22dp"
+        android:text="Name of Client 2:" />
+
+    <EditText
+        android:id="@+id/inputClient2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelClient2"
+        android:layout_alignBottom="@+id/labelClient2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/labelClient2"
+        android:layout_toRightOf="@+id/labelClient2"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/labelClient2Balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/inputClient2"
+        android:layout_marginTop="13dp"
+        android:text="Initial balance of Client 2:" />
+
+    <EditText
+        android:id="@+id/inputClient2Balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/inputClient2"
+        android:layout_toEndOf="@+id/labelClient2Balance"
+        android:layout_toRightOf="@+id/labelClient2Balance"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/labelClient3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/inputClient2Balance"
+        android:layout_marginTop="22dp"
+        android:text="Name of Client 3:" />
+
+    <EditText
+        android:id="@+id/inputClient3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/inputClient2Balance"
+        android:layout_toEndOf="@+id/labelClient3"
+        android:layout_toRightOf="@+id/labelClient3"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/labelService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonCreateAccounts"
+        android:layout_marginTop="24dp"
+        android:text="Service:" />
+
+    <TextView
+        android:id="@+id/labelClient3Balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/inputClient3"
+        android:layout_marginTop="34dp"
+        android:text="Initial balance of Client 3:" />
+
+    <EditText
+        android:id="@+id/inputClient3Balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelClient3Balance"
+        android:layout_alignBottom="@+id/labelClient3Balance"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/labelClient3Balance"
+        android:layout_toRightOf="@+id/labelClient3Balance"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonCreateAccounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/inputClient3Balance"
+        android:layout_marginTop="39dp"
+        android:onClick="buttonCreateAccount"
+        android:text="Create Accounts" />
+
+    <Spinner
+        android:id="@+id/spinnerService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/labelService"
+        android:layout_toEndOf="@+id/labelService"
+        android:layout_toRightOf="@+id/labelService"
+        android:entries="@array/options"/>
+
+    <TextView
+        android:id="@+id/labelFromAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinnerService"
+        android:layout_marginTop="28dp"
+        android:text="From Account Owner:" />
+
+    <Spinner
+        android:id="@+id/spinnerFromAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/labelFromAccount"
+        android:layout_toEndOf="@+id/labelFromAccount"
+        android:layout_toRightOf="@+id/labelFromAccount"
+        android:entries="@array/clients"/>
+
+    <TextView
+        android:id="@+id/labelToAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinnerFromAccount"
+        android:layout_marginTop="27dp"
+        android:text="To Account Owner:" />
+
+    <Spinner
+        android:id="@+id/spinnerToAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/labelToAccount"
+        android:layout_toEndOf="@+id/labelToAccount"
+        android:layout_toRightOf="@+id/labelToAccount"
+        android:entries="@array/clients"/>
+
+    <TextView
+        android:id="@+id/labelAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinnerToAccount"
+        android:layout_marginTop="30dp"
+        android:text="Amount:" />
+
+    <EditText
+        android:id="@+id/inputAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelAmount"
+        android:layout_alignBottom="@+id/labelAmount"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/labelAmount"
+        android:layout_toRightOf="@+id/labelAmount"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/inputAmount"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/inputAmount"
+        android:layout_below="@+id/inputAmount"
+        android:layout_marginTop="22dp"
+        android:onClick="buttonTransaction"
+        android:text="Complete Transaction" />
+
+    <TextView
+        android:id="@+id/labelOutcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button4"
+        android:layout_marginTop="32dp"
+        android:text="ANSWER"
+        android:textAlignment="center" />
+
+
+</android.widget.RelativeLayout>
